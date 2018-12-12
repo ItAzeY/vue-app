@@ -2,10 +2,10 @@
   <div class="wrapper">
     <swiper :options="swiperOption">
       <!-- 这个是用来 配合下面的数据进行展示, 但是应该只支持绝对路径, 我本地的相对路径打不开, 注释的是一个淘宝的图片地址, 换的时候, 只需要打开注释即可 -->
-      <swiper-slide class="swiper-img" v-for="item of swiperList" :key="item.id">
+      <!-- <swiper-slide class="swiper-img" v-for="item of swiperList" :key="item.id">
         <img :src="item.imgUrl" alt="">
-      </swiper-slide>
-      <!-- <swiper-slide class="swiper-img">
+      </swiper-slide> -->
+      <swiper-slide class="swiper-img">
         <img src="../../../assets/images/1.jpg" alt="">
       </swiper-slide>
       <swiper-slide class="swiper-img">
@@ -22,7 +22,7 @@
       </swiper-slide>
       <swiper-slide class="swiper-img">
         <img src="../../../assets/images/6.jpg" alt="">
-      </swiper-slide> -->
+      </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>
