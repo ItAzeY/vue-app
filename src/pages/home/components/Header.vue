@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// @符号代表当前根路径 也就是 src 路径, 但是要在其他模块引入这个需要再 @ 前面 加上 ~
+  // @符号代表当前根路径 也就是 src 路径, 但是要在其他模块引入这个需要再 @ 前面 加上 ~
   @import '~styles/varibles.styl';
   .header
     line-height .86rem
