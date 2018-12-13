@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <home-header></home-header>
     <home-swiper></home-swiper>
     <home-icons></home-icons>
@@ -28,5 +28,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+  .box
+    max-width 750px
+    min-width 320px
+    margin 0 auto
 </style>

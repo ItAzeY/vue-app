@@ -55,6 +55,7 @@ export default {
   ul
     padding 0
     margin 0
+    list-style none
     .item
       overflow hidden
       display flex
