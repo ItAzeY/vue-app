@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-pic">
           <img class="item-img" :src="item.imgUrl" >
         </div>
@@ -18,29 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://m.360buyimg.com/mobilecms/jfs/t1/17532/39/996/145336/5c0e32e0E70e7d45f/0b061986d0207178.jpg!cr_1125x549_0_72',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://m.360buyimg.com/mobilecms/s750x366_jfs/t21031/96/1109839657/84560/4436e3c7/5b20814bN4d869aa3.jpg!cr_1125x549_0_72!q70.jpg.dpg',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/16525/30/1134/32452/5c0f77b7E1e096ed2/c19dc1b028ddc001.jpg!cr_1125x549_0_72!q70.jpg.dpg',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

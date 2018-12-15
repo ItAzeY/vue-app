@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" >
         <div class="item-info">
           <p class="item-title">{{ item.title }}</p>
@@ -17,29 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://m.360buyimg.com/n1/s150x150_jfs/t27565/103/2567518235/12945/5683be64/5c04cc68Nfae2c9eb.jpg!q70.jpg.dpg',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://m.360buyimg.com/mobilecms/s150x150_jfs/t22666/293/257815171/29274/6b5605b1/5b2a5295N5a81ad96.jpg!q70.jpg.dpg',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://m.360buyimg.com/n1/s150x150_jfs/t26176/51/1929045996/165543/d8a39956/5bf3bcdaN73cafc89.jpg!q70.jpg.dpg',
-          desc: '浪漫大连首站,浪漫的海洋主题乐园',
-          title: '大连圣亚海洋世界'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

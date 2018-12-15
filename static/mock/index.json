@@ -1,0 +1,124 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgUrl": "https://gw.alicdn.com/imgextra/i1/81/O1CN01vf7RAJ1CT8Z0mb8T4_!!81-0-lubanu.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://gw.alicdn.com/imgextra/i4/7/O1CN01LJ0Q2w1BvFFzEfaGJ_!!7-0-lubanu.jpg"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://gw.alicdn.com/imgextra/i2/124/O1CN01M3Yosf1Cmpb2A0iTQ_!!124-0-lubanu.jpg"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://gw.alicdn.com/imgextra/i1/79/O1CN01VCdCsH1CSDlztDQg2_!!79-0-lubanu.jpg"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "https://aecpm.alicdn.com/simba/img/TB14ab1KpXXXXclXFXXSutbFXXX.jpg_q50.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1Wxi2trsrBKNjSZFpXXcXhFXa-183-144.png_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://img.alicdn.com/tfs/TB10UHQaNjaK1RjSZKzXXXVwXXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB11rTqtj7nBKNjSZLeXXbxCFXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://gw.alicdn.com/tps/TB1gmFhPVXXXXXhXXXXXXXXXXXX-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1IKqDtpooBKNjSZFPXXXa2XXa-183-144.png_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1o0FLtyMnBKNjSZFoXXbOSFXa-183-144.png_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1ydXzhCzqK1RjSZPcXXbTepXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1BqystrZnBKNjSZFrXXaRLFXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB1CMf4tlnTBKNjSZPfXXbf1XXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      },
+      {
+        "id": "0010",
+        "imgUrl": "https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp",
+        "desc": "热门景点"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "0001",
+        "imgUrl": "https://m.360buyimg.com/n1/s150x150_jfs/t27565/103/2567518235/12945/5683be64/5c04cc68Nfae2c9eb.jpg!q70.jpg.dpg",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://m.360buyimg.com/mobilecms/s150x150_jfs/t22666/293/257815171/29274/6b5605b1/5b2a5295N5a81ad96.jpg!q70.jpg.dpg",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://m.360buyimg.com/n1/s150x150_jfs/t26176/51/1929045996/165543/d8a39956/5bf3bcdaN73cafc89.jpg!q70.jpg.dpg",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "0001",
+        "imgUrl": "https://m.360buyimg.com/mobilecms/jfs/t1/17532/39/996/145336/5c0e32e0E70e7d45f/0b061986d0207178.jpg!cr_1125x549_0_72",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://m.360buyimg.com/mobilecms/s750x366_jfs/t21031/96/1109839657/84560/4436e3c7/5b20814bN4d869aa3.jpg!cr_1125x549_0_72!q70.jpg.dpg",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://m.360buyimg.com/mobilecms/s750x366_jfs/t1/16525/30/1134/32452/5c0f77b7E1e096ed2/c19dc1b028ddc001.jpg!cr_1125x549_0_72!q70.jpg.dpg",
+        "desc": "浪漫大连首站,浪漫的海洋主题乐园",
+        "title": "大连圣亚海洋世界"
+      }
+    ]
+  }
+}

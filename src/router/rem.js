@@ -1,7 +1,8 @@
-;(function(doc, win) {
-  var docEl = doc.documentElement,
+;(function (doc, win) {
+  // eslint-disable-next-line one-var
+  let docEl = doc.documentElement,
     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-    recalc = function() {
+    recalc = function () {
       var clientWidth = docEl.clientWidth
       if (!clientWidth) return
       if (clientWidth >= 750) {
