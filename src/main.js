@@ -7,7 +7,7 @@ import fastClick from 'fastclick' // 解决移动端click点击延迟的问题
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Rem from './router/rem'
 import store from './store/index'
-
+import 'babel-polyfill'
 import 'styles/Normalize.css' // 引入 Normalize.css
 import 'styles/border.css' // 解决移动端1px像素问题
 import 'styles/iconfont/iconfont.css'

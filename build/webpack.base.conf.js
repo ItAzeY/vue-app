@@ -37,7 +37,8 @@ module.exports = {
             '@': resolve('src'),
             // 修改这些文件, 我们都需要重启服务.
             // 这个是修改路径别名
-            'styles':resolve('src/assets/styles')
+            'styles':resolve('src/assets/styles'),
+            'common':resolve('src/common')
         }
     },
     module: {

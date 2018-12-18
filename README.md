@@ -134,3 +134,72 @@ ellipsis()
 
 1. 先给元素绑定一个 click 事件, 然后定义一个方法, 调用 vuex 中的属性, 传递给 路由的js 文件 修改到属性的值
 2. 但是 当你点击过之后, 再次刷新网页, 那么还是默认的地址, 我们需要做一个 localStorage 来进行缓存
+
+## 全局组件的解绑
+
+### 当绑定一个事件为 window 所有的时候,会带来大量问题
+
+我再 详情页里面绑定了一个 window 的scroll 事件, index首页同样会触发此事件, activated
+有一个生命周期钩子是, deactivated ,这个钩子是再此页面被隐藏或者说更换页面之前执行.
+
+## 组件中暴漏出来的 name 的作用
+
+### 作用
+
+1. `<keep-alive exclude="Detail"></keep-alive>` 每次都需要发送 ajax 请求, 不会用到缓存
+2. 递归组件时调用
+3. vue chrome调试工具使用
+
+## scrool 拖动多个页面中互相影响
+
+### 解决问题
+
+```javascript
+scrollBehavior (to, from, savedPosition) {
+  return { x: 0, y: 0 }
+}
+```
+
+再路由页面加上这个语句就可以结局,
+这句话的意思是说, 再每次进行路由切换的时候, 都会先进行 滚动到 x:0, y:0 的位置
+
+## 异步组件加载
+
+### 组件加载
+
+再打包的时候, 会把所有的 js 都打包再 app.js 文件中, 所以再打开首屏(首页)的时候, 会把别的组件中的所有 js 都加载过来 这样会造成首屏加载慢 首屏变白
+有一种给异步组件加载 就是按需加载, 再你加载哪一个组件的时候, 哪一个组件的 js 才会加载,这样就避免了 vue 项目的首屏问题,
+按需加载 就是 再用的时候才去加载
+
+首屏问题
+从 route js中, 把你引入的组件,变成按需加载 只需要改变
+原本的样子:
+
+```JavaScript
+import Home from '@/pages/home/Home'
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    }
+  ]
+})
+```
+
+改变之后的样子
+
+```JavaScript
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: () => import('@/pages/home/Home')
+    }
+  ]
+})
+```
+
+并且这个适用于任何组件, 只需要响应的替换即可,并不一定是只有首屏才需要做

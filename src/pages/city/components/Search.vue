@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="search">
-      <input v-model="keyword" class="search-input" type="text" placeholder="输入城市名或拼音">
+      <input v-model="keyword" class="search-input" type="text" placeholder="输入城市名或拼音" ref="pathClear">
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
@@ -59,12 +59,16 @@ export default {
   methods: {
     handleCityClick (city) {
       this.changeCity(city)
+      this.keyword = ''
       this.$router.push('/')
     },
     ...mapMutations(['changeCity'])
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.search)
+  },
+  activated () {
+    this.keyword = ''
   }
 }
 </script>
