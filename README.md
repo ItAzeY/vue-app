@@ -203,3 +203,11 @@ export default new Router({
 ```
 
 并且这个适用于任何组件, 只需要响应的替换即可,并不一定是只有首屏才需要做
+
+## 解决bug
+
+### 安卓 click 事件失效
+
+原因可能是你使用了`better-scroll`，默认它会阻止touch事件。所以在配置中需要加上click: true
+加上这一句就可以了
+`this.scroll=new Bscroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })`
